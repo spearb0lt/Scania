@@ -1,0 +1,5 @@
+epoch,train_loss,val_loss,epoch_time,lr,notes
+1,375.339823,288.557560,00:00:38,0.001,Saved at epoch 1
+2,236.372839,250.863939,00:00:39,0.001,Saved at epoch 2
+3,185.408423,171.496121,00:00:38,0.001,Saved at epoch 3
+4,123.334683,114.901100,00:00:38,0.001,Saved at epoch 4
