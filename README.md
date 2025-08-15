@@ -30,6 +30,11 @@
 <img width="589" height="528" alt="Screenshot 2025-08-16 025113" src="https://github.com/user-attachments/assets/b255ceeb-7ece-4c5d-945c-bb47d9c23d29" />
 
 
+
+<img width="797" height="341" alt="image" src="https://github.com/user-attachments/assets/16d3bc7f-19e0-413e-823e-6c6814daa901" />
+
+<img width="779" height="316" alt="image" src="https://github.com/user-attachments/assets/a22de429-b902-4a2a-9a3e-530bdeabedd8" />
+
 **Short description**
 This repository implements a TabTransformer-based model for Remaining Useful Life (RUL) prediction on the Scania dataset, with an end-to-end preprocessing pipeline and differential-privacy-enabled training. It also contains an evaluation and Membership Inference Attack (MIA) framework so you can measure privacy/utility trade-offs.
 
