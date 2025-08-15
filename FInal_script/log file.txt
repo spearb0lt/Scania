@@ -1,0 +1,1672 @@
+log file:\
+
+
+Loaded: (6553, 70, 105) (6553,) (6553, 8)
+/csehome/p23iot002/.local/lib/python3.10/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.3.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+Category sizes: (3, 29, 21, 4, 2, 5, 17, 9)
+[W Context.cpp:258] Warning: torch.backends.cuda.preferred_linalg_library is an experimental feature. If you see any error or unexpected behavior when this flag is set please file an issue on GitHub. (function operator())
+
+Epoch 01 → 
+
+Train MSE: 360.8680 | Val MSE: 361.1834 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 361.1833913004371
+
+Epoch 02 → 
+
+Train MSE: 273.8552 | Val MSE: 307.0586 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 307.05855606276964
+
+Epoch 03 → 
+
+Train MSE: 214.4875 | Val MSE: 249.7085 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 249.70853734252836
+
+Epoch 04 → 
+
+Train MSE: 282.6163 | Val MSE: 299.9798 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 05 → 
+
+Train MSE: 151.2482 | Val MSE: 166.7499 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 166.74990666649163
+
+Epoch 06 → 
+
+Train MSE: 148.3372 | Val MSE: 185.6187 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 07 → 
+
+Train MSE: 90.5089 | Val MSE: 117.1177 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 117.11769470051897
+
+Epoch 08 → 
+
+Train MSE: 73.3904 | Val MSE: 93.0728 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 93.0727595686458
+
+Epoch 09 → 
+
+Train MSE: 81.1901 | Val MSE: 87.9917 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 87.99171439024622
+
+Epoch 10 → 
+
+Train MSE: 80.1354 | Val MSE: 85.8997 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 85.8997092170628
+
+Epoch 11 → 
+
+Train MSE: 63.9732 | Val MSE: 67.3833 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 67.38332227856762
+
+Epoch 12 → 
+
+Train MSE: 46.6901 | Val MSE: 52.3929 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 52.39290039272003
+
+Epoch 13 → 
+
+Train MSE: 57.3686 | Val MSE: 60.1175 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 14 → 
+
+Train MSE: 40.2451 | Val MSE: 43.8566 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 43.85657702285219
+
+Epoch 15 → 
+
+Train MSE: 73.0617 | Val MSE: 74.8689 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 16 → 
+
+Train MSE: 48.8202 | Val MSE: 49.9998 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 17 → 
+
+Train MSE: 27.1700 | Val MSE: 29.2066 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 29.2066151570219
+
+Epoch 18 → 
+
+Train MSE: 37.3812 | Val MSE: 41.0736 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 19 → 
+
+Train MSE: 24.9568 | Val MSE: 26.8681 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 26.868137093375967
+
+Epoch 20 → 
+
+Train MSE: 27.3444 | Val MSE: 30.2588 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 21 → 
+
+Train MSE: 20.8168 | Val MSE: 23.0888 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 23.08878773791839
+
+Epoch 22 → 
+
+Train MSE: 43.0330 | Val MSE: 46.5295 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 23 → 
+
+Train MSE: 34.4593 | Val MSE: 36.8779 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 24 → 
+
+Train MSE: 17.0213 | Val MSE: 20.1860 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 20.186034380798574
+
+Epoch 25 → 
+
+Train MSE: 25.5548 | Val MSE: 27.7001 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 26 → 
+
+Train MSE: 20.5847 | Val MSE: 22.3335 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 27 → 
+
+Train MSE: 14.2984 | Val MSE: 15.6566 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 15.656581887391393
+
+Epoch 28 → 
+
+Train MSE: 15.5702 | Val MSE: 17.8571 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 29 → 
+
+Train MSE: 12.4600 | Val MSE: 14.6144 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 14.614446259563339
+
+Epoch 30 → 
+
+Train MSE: 30.4636 | Val MSE: 32.2838 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 31 → 
+
+Train MSE: 22.7217 | Val MSE: 24.8725 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 32 → 
+
+Train MSE: 16.4645 | Val MSE: 19.3153 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 33 → 
+
+Train MSE: 16.8522 | Val MSE: 18.9896 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 34 → 
+
+Train MSE: 11.2339 | Val MSE: 12.2964 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 12.296353597662815
+
+Epoch 35 → 
+
+Train MSE: 25.0410 | Val MSE: 27.4460 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 36 → 
+
+Train MSE: 19.7740 | Val MSE: 20.8026 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 37 → 
+
+Train MSE: 20.5116 | Val MSE: 21.6172 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 38 → 
+
+Train MSE: 9.3867 | Val MSE: 11.6109 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 11.610860529244173
+
+Epoch 39 → 
+
+Train MSE: 20.5604 | Val MSE: 20.8542 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 40 → 
+
+Train MSE: 11.1670 | Val MSE: 12.8690 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 41 → 
+
+Train MSE: 22.4400 | Val MSE: 24.3663 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 42 → 
+
+Train MSE: 19.5404 | Val MSE: 21.7474 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 43 → 
+
+Train MSE: 17.8137 | Val MSE: 19.0738 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 44 → 
+
+Train MSE: 24.6450 | Val MSE: 26.8962 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 45 → 
+
+Train MSE: 17.7611 | Val MSE: 19.3793 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 46 → 
+
+Train MSE: 25.7450 | Val MSE: 26.0492 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 47 → 
+
+Train MSE: 13.6055 | Val MSE: 17.0349 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 48 → 
+
+Train MSE: 16.8780 | Val MSE: 19.2091 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 49 → 
+
+Train MSE: 7.8792 | Val MSE: 9.9531 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 9.95308948781634
+
+Epoch 50 → 
+
+Train MSE: 11.8903 | Val MSE: 13.2688 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 51 → 
+
+Train MSE: 14.6522 | Val MSE: 15.9759 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 52 → 
+
+Train MSE: 13.9289 | Val MSE: 14.5216 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 53 → 
+
+Train MSE: 6.9745 | Val MSE: 8.2321 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 8.232095783853422
+
+Epoch 54 → 
+
+Train MSE: 12.1798 | Val MSE: 12.5228 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 55 → 
+
+Train MSE: 7.6040 | Val MSE: 8.0235 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 8.023488896571434
+
+Epoch 56 → 
+
+Train MSE: 15.5048 | Val MSE: 16.6817 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 57 → 
+
+Train MSE: 9.6755 | Val MSE: 9.5109 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 58 → 
+
+Train MSE: 15.5965 | Val MSE: 15.8517 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 59 → 
+
+Train MSE: 10.4403 | Val MSE: 11.5055 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 60 → 
+
+Train MSE: 20.3675 | Val MSE: 20.5842 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 61 → 
+
+Train MSE: 12.0006 | Val MSE: 12.9273 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 62 → 
+
+Train MSE: 13.3140 | Val MSE: 13.4635 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 63 → 
+
+Train MSE: 11.4219 | Val MSE: 13.1423 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 64 → 
+
+Train MSE: 8.4369 | Val MSE: 9.3570 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 65 → 
+
+Train MSE: 12.5527 | Val MSE: 13.7714 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 66 → 
+
+Train MSE: 6.3028 | Val MSE: 6.8671 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 6.867081925125181
+
+Epoch 67 → 
+
+Train MSE: 9.3656 | Val MSE: 10.3781 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 68 → 
+
+Train MSE: 8.8225 | Val MSE: 9.6554 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 69 → 
+
+Train MSE: 7.7576 | Val MSE: 8.4178 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 70 → 
+
+Train MSE: 7.5139 | Val MSE: 7.7686 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 71 → 
+
+Train MSE: 6.7715 | Val MSE: 7.1568 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 72 → 
+
+Train MSE: 12.2174 | Val MSE: 12.8873 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 73 → 
+
+Train MSE: 8.7441 | Val MSE: 9.3417 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 74 → 
+
+Train MSE: 10.0793 | Val MSE: 10.0189 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 75 → 
+
+Train MSE: 12.1544 | Val MSE: 13.5577 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 76 → 
+
+Train MSE: 11.8201 | Val MSE: 12.3386 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 77 → 
+
+Train MSE: 8.9430 | Val MSE: 9.5752 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 78 → 
+
+Train MSE: 13.1128 | Val MSE: 14.1671 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 79 → 
+
+Train MSE: 14.8334 | Val MSE: 14.9872 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 80 → 
+
+Train MSE: 7.2301 | Val MSE: 8.2198 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 81 → 
+
+Train MSE: 10.2675 | Val MSE: 10.4805 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 82 → 
+
+Train MSE: 6.4454 | Val MSE: 7.1965 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 83 → 
+
+Train MSE: 22.4836 | Val MSE: 23.4607 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 84 → 
+
+Train MSE: 4.2843 | Val MSE: 4.8732 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 4.873234710649713
+
+Epoch 85 → 
+
+Train MSE: 17.7851 | Val MSE: 17.0084 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 86 → 
+
+Train MSE: 8.9680 | Val MSE: 9.4673 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 87 → 
+
+Train MSE: 18.3863 | Val MSE: 19.3102 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 88 → 
+
+Train MSE: 13.3247 | Val MSE: 14.2363 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 89 → 
+
+Train MSE: 19.7968 | Val MSE: 21.7788 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 90 → 
+
+Train MSE: 12.8457 | Val MSE: 13.9604 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 91 → 
+
+Train MSE: 16.3642 | Val MSE: 17.7469 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 92 → 
+
+Train MSE: 10.8892 | Val MSE: 11.6044 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 93 → 
+
+Train MSE: 8.7562 | Val MSE: 9.5348 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 94 → 
+
+Train MSE: 8.7292 | Val MSE: 9.1497 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 95 → 
+
+Train MSE: 15.7471 | Val MSE: 16.2690 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 96 → 
+
+Train MSE: 7.5864 | Val MSE: 8.0082 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 97 → 
+
+Train MSE: 12.3214 | Val MSE: 12.3862 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 98 → 
+
+Train MSE: 7.7476 | Val MSE: 7.7950 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 99 → 
+
+Train MSE: 8.9470 | Val MSE: 9.9109 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 100 → 
+
+Train MSE: 7.8122 | Val MSE: 8.6606 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+/csehome/p23iot002/Shubhro/GUEST/custom_dp.py:280: UserWarning: Optimal order is the smallest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+Spectral-DP with
+	sampling rate = 19.5%,
+	noise_multiplier = 0.1,
+	iterated over 600 steps,
+satisfies differential privacy with
+	epsilon = 2.24e+04,
+	delta = 6.3374685224095e-05.
+The optimal alpha is 1.1.
+The privacy estimate is likely to be improved by expanding the set of alpha orders.
+Final (ε,δ)=(22430.85,6.3374685224095e-05), optimal α=1.1
+
+
+
+
+
+
+
+
+
+
+
++
+with dynamic noise:
+
+
+
+Loaded: (6553, 70, 105) (6553,) (6553, 8)
+/csehome/p23iot002/.local/lib/python3.10/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.3.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+Category sizes: (3, 29, 21, 4, 2, 5, 17, 9)
+[W Context.cpp:258] Warning: torch.backends.cuda.preferred_linalg_library is an experimental feature. If you see any error or unexpected behavior when this flag is set please file an issue on GitHub. (function operator())
+
+Epoch 01 → 
+
+Train MSE: 273.2666 | Val MSE: 299.9572 | σ=0.100 | C=1.000
+Time: 0hrs. 1min. 0sec.
+Model saved with val loss: 299.9572140412145
+
+Epoch 02 → 
+
+Train MSE: 245.0983 | Val MSE: 250.1145 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 250.11454455203267
+
+Epoch 03 → 
+
+Train MSE: 194.9247 | Val MSE: 229.1965 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 229.1964855412324
+
+Epoch 04 → 
+
+Train MSE: 146.6832 | Val MSE: 162.2872 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 162.28722107492268
+
+Epoch 05 → 
+
+Train MSE: 139.6341 | Val MSE: 159.0748 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 159.07478192850982
+
+Epoch 06 → 
+
+Train MSE: 103.2383 | Val MSE: 114.3623 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 114.36225887621568
+
+Epoch 07 → 
+
+Train MSE: 112.9574 | Val MSE: 129.1149 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 08 → 
+
+Train MSE: 73.5568 | Val MSE: 81.6762 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 81.6762336829889
+
+Epoch 09 → 
+
+Train MSE: 83.3926 | Val MSE: 91.5634 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 10 → 
+
+Train MSE: 68.2576 | Val MSE: 78.1596 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 78.1596025747711
+
+Epoch 11 → 
+
+Train MSE: 61.9766 | Val MSE: 68.6059 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 68.60592626052262
+
+Epoch 12 → 
+
+Train MSE: 64.6656 | Val MSE: 69.7186 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 13 → 
+
+Train MSE: 52.7405 | Val MSE: 53.1281 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 53.128086718596364
+
+Epoch 14 → 
+
+Train MSE: 42.4089 | Val MSE: 44.8110 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 44.81095624351938
+
+Epoch 15 → 
+
+Train MSE: 26.1489 | Val MSE: 29.3873 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 29.387345063058955
+
+Epoch 16 → 
+
+Train MSE: 31.2723 | Val MSE: 33.1391 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 17 → 
+
+Train MSE: 29.6642 | Val MSE: 31.2022 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 18 → 
+
+Train MSE: 28.6571 | Val MSE: 29.8321 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 19 → 
+
+Train MSE: 35.3131 | Val MSE: 38.3285 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 20 → 
+
+Train MSE: 31.8355 | Val MSE: 34.0898 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 21 → 
+
+Train MSE: 32.4838 | Val MSE: 36.1572 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 22 → 
+
+Train MSE: 34.1348 | Val MSE: 36.1057 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 23 → 
+
+Train MSE: 46.2520 | Val MSE: 48.7033 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 24 → 
+
+Train MSE: 25.6761 | Val MSE: 25.9810 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 25.981041100077917
+
+Epoch 25 → 
+
+Train MSE: 29.7874 | Val MSE: 31.1624 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 26 → 
+
+Train MSE: 20.4805 | Val MSE: 23.3910 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 23.391016268348256
+
+Epoch 27 → 
+
+Train MSE: 28.2428 | Val MSE: 30.1548 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 28 → 
+
+Train MSE: 14.5119 | Val MSE: 15.9514 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 15.951378674656267
+
+Epoch 29 → 
+
+Train MSE: 25.2844 | Val MSE: 27.2301 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 30 → 
+
+Train MSE: 19.4554 | Val MSE: 22.0452 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 31 → 
+
+Train MSE: 20.5043 | Val MSE: 23.2658 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 32 → 
+
+Train MSE: 26.0152 | Val MSE: 29.9002 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 33 → 
+
+Train MSE: 40.8349 | Val MSE: 43.8025 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 34 → 
+
+Train MSE: 18.0589 | Val MSE: 20.4339 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 35 → 
+
+Train MSE: 13.8086 | Val MSE: 15.4017 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 15.401718574657774
+
+Epoch 36 → 
+
+Train MSE: 33.8548 | Val MSE: 35.0447 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 37 → 
+
+Train MSE: 15.3436 | Val MSE: 15.8047 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 38 → 
+
+Train MSE: 20.0004 | Val MSE: 20.5059 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 39 → 
+
+Train MSE: 15.3653 | Val MSE: 15.2149 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 15.21491054939369
+
+Epoch 40 → 
+
+Train MSE: 15.2854 | Val MSE: 18.0191 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 41 → 
+
+Train MSE: 19.1221 | Val MSE: 19.1079 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 42 → 
+
+Train MSE: 18.6446 | Val MSE: 20.3333 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 43 → 
+
+Train MSE: 12.2129 | Val MSE: 13.2672 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 13.267222135327046
+
+Epoch 44 → 
+
+Train MSE: 21.0746 | Val MSE: 22.1761 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 45 → 
+
+Train MSE: 15.1541 | Val MSE: 15.5916 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 46 → 
+
+Train MSE: 23.9781 | Val MSE: 25.0512 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 47 → 
+
+Train MSE: 21.3131 | Val MSE: 22.8458 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 48 → 
+
+Train MSE: 12.3701 | Val MSE: 13.0672 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 13.067214490074315
+
+Epoch 49 → 
+
+Train MSE: 31.2453 | Val MSE: 33.5782 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 50 → 
+
+Train MSE: 10.2134 | Val MSE: 13.0023 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 13.002273782894504
+
+Epoch 51 → 
+
+Train MSE: 9.2446 | Val MSE: 9.4915 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 9.491488486551129
+
+Epoch 52 → 
+
+Train MSE: 8.6456 | Val MSE: 9.1312 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 9.13121667843025
+
+Epoch 53 → 
+
+Train MSE: 10.5175 | Val MSE: 11.3615 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 54 → 
+
+Train MSE: 20.3323 | Val MSE: 20.1210 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 55 → 
+
+Train MSE: 10.6028 | Val MSE: 12.0183 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 56 → 
+
+Train MSE: 11.7583 | Val MSE: 13.2465 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 57 → 
+
+Train MSE: 11.6525 | Val MSE: 12.9348 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 58 → 
+
+Train MSE: 20.7916 | Val MSE: 21.3542 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 59 → 
+
+Train MSE: 9.6675 | Val MSE: 10.6632 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 60 → 
+
+Train MSE: 13.5898 | Val MSE: 14.6728 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 61 → 
+
+Train MSE: 8.4610 | Val MSE: 9.2325 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 62 → 
+
+Train MSE: 15.9616 | Val MSE: 17.3877 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 63 → 
+
+Train MSE: 8.3777 | Val MSE: 9.8030 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 64 → 
+
+Train MSE: 10.4090 | Val MSE: 10.9204 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 65 → 
+
+Train MSE: 7.7204 | Val MSE: 9.9291 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 66 → 
+
+Train MSE: 12.3834 | Val MSE: 12.8431 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 67 → 
+
+Train MSE: 17.6117 | Val MSE: 20.3069 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 68 → 
+
+Train MSE: 7.0622 | Val MSE: 7.5097 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 7.509675306004481
+
+Epoch 69 → 
+
+Train MSE: 24.7672 | Val MSE: 26.0753 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 70 → 
+
+Train MSE: 9.7750 | Val MSE: 10.4582 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 71 → 
+
+Train MSE: 15.6505 | Val MSE: 17.7723 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 72 → 
+
+Train MSE: 7.4493 | Val MSE: 8.5907 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 73 → 
+
+Train MSE: 8.2295 | Val MSE: 7.7506 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 74 → 
+
+Train MSE: 18.3013 | Val MSE: 18.7582 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 75 → 
+
+Train MSE: 18.1109 | Val MSE: 17.7490 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 76 → 
+
+Train MSE: 8.3869 | Val MSE: 8.9949 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 77 → 
+
+Train MSE: 10.0259 | Val MSE: 11.5483 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 78 → 
+
+Train MSE: 12.0438 | Val MSE: 12.3545 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 79 → 
+
+Train MSE: 7.6156 | Val MSE: 8.9244 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 80 → 
+
+Train MSE: 13.9418 | Val MSE: 14.6316 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 81 → 
+
+Train MSE: 14.0374 | Val MSE: 14.1951 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 82 → 
+
+Train MSE: 9.0287 | Val MSE: 9.5192 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 83 → 
+
+Train MSE: 10.7367 | Val MSE: 11.8445 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 84 → 
+
+Train MSE: 12.5459 | Val MSE: 13.9272 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 85 → 
+
+Train MSE: 9.0543 | Val MSE: 9.4910 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 86 → 
+
+Train MSE: 7.4497 | Val MSE: 8.6510 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 87 → 
+
+Train MSE: 12.2668 | Val MSE: 13.2043 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 88 → 
+
+Train MSE: 6.2561 | Val MSE: 6.3429 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 6.3429351045738
+
+Epoch 89 → 
+
+Train MSE: 9.9595 | Val MSE: 9.6889 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 90 → 
+
+Train MSE: 7.9775 | Val MSE: 8.9333 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 91 → 
+
+Train MSE: 10.9842 | Val MSE: 12.0184 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 92 → 
+
+Train MSE: 5.0960 | Val MSE: 5.5393 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 5.539288438248507
+
+Epoch 93 → 
+
+Train MSE: 6.0098 | Val MSE: 6.6555 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 94 → 
+
+Train MSE: 4.8663 | Val MSE: 5.4413 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 5.441310908756212
+
+Epoch 95 → 
+
+Train MSE: 6.1755 | Val MSE: 6.6854 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 96 → 
+
+Train MSE: 5.1375 | Val MSE: 6.2059 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 97 → 
+
+Train MSE: 9.2161 | Val MSE: 10.1773 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 98 → 
+
+Train MSE: 3.6199 | Val MSE: 4.0847 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 4.084744730221234
+
+Epoch 99 → 
+
+Train MSE: 6.7510 | Val MSE: 7.8485 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 100 → 
+
+Train MSE: 3.5069 | Val MSE: 3.9718 | σ=0.100 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 3.9717765461843855
+/csehome/p23iot002/Shubhro/GUEST/custom_dp.py:280: UserWarning: Optimal order is the smallest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+Spectral-DP with
+	sampling rate = 19.5%,
+	noise_multiplier = 0.1,
+	iterated over 600 steps,
+satisfies differential privacy with
+	epsilon = 2.24e+04,
+	delta = 6.3374685224095e-05.
+The optimal alpha is 1.1.
+The privacy estimate is likely to be improved by expanding the set of alpha orders.
+Final (ε,δ)=(22430.85,6.3374685224095e-05), optimal α=1.1
+
+
+
+
+
+
++
+with variable max_grad_norm
+
+
+Loaded: (6553, 70, 105) (6553,) (6553, 8)
+/csehome/p23iot002/.local/lib/python3.10/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.3.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+Category sizes: (3, 29, 21, 4, 2, 5, 17, 9)
+[W Context.cpp:258] Warning: torch.backends.cuda.preferred_linalg_library is an experimental feature. If you see any error or unexpected behavior when this flag is set please file an issue on GitHub. (function operator())
+
+Epoch 01 → 
+
+Train MSE: 316.2575 | Val MSE: 330.4516 | σ=0.796 | C=1.000
+Time: 0hrs. 1min. 0sec.
+Model saved with val loss: 330.4516021938018
+
+Epoch 02 → 
+
+Train MSE: 286.9391 | Val MSE: 316.9877 | σ=0.792 | C=1.000
+Time: 0hrs. 0min. 59sec.
+Model saved with val loss: 316.9876883337281
+
+Epoch 03 → 
+
+Train MSE: 236.8692 | Val MSE: 256.5523 | σ=0.788 | C=1.000
+Time: 0hrs. 0min. 59sec.
+Model saved with val loss: 256.55230547616173
+
+Epoch 04 → 
+
+Train MSE: 208.3387 | Val MSE: 230.0129 | σ=0.784 | C=1.000
+Time: 0hrs. 0min. 59sec.
+Model saved with val loss: 230.01288324817276
+
+Epoch 05 → 
+
+Train MSE: 183.6942 | Val MSE: 205.7708 | σ=0.780 | C=1.000
+Time: 0hrs. 0min. 59sec.
+Model saved with val loss: 205.77081240632896
+
+Epoch 06 → 
+
+Train MSE: 151.1805 | Val MSE: 176.5141 | σ=0.776 | C=1.000
+Time: 0hrs. 0min. 59sec.
+Model saved with val loss: 176.51405435732354
+
+Epoch 07 → 
+
+Train MSE: 147.9140 | Val MSE: 176.6059 | σ=0.772 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 08 → 
+
+Train MSE: 117.3401 | Val MSE: 129.4936 | σ=0.768 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 129.49361784561822
+
+Epoch 09 → 
+
+Train MSE: 145.2997 | Val MSE: 162.9130 | σ=0.764 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 10 → 
+
+Train MSE: 117.7746 | Val MSE: 148.2162 | σ=0.760 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 11 → 
+
+Train MSE: 128.8401 | Val MSE: 139.4797 | σ=0.756 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 12 → 
+
+Train MSE: 89.1017 | Val MSE: 101.4992 | σ=0.752 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 101.49916986833539
+
+Epoch 13 → 
+
+Train MSE: 70.9461 | Val MSE: 85.9249 | σ=0.748 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 85.92487928214463
+
+Epoch 14 → 
+
+Train MSE: 70.6166 | Val MSE: 85.5100 | σ=0.744 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 85.5099898453981
+
+Epoch 15 → 
+
+Train MSE: 59.4139 | Val MSE: 67.8561 | σ=0.740 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 67.8560526052747
+
+Epoch 16 → 
+
+Train MSE: 48.4069 | Val MSE: 51.6399 | σ=0.736 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 51.63987072290672
+
+Epoch 17 → 
+
+Train MSE: 47.3191 | Val MSE: 51.1740 | σ=0.732 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 51.174035349481436
+
+Epoch 18 → 
+
+Train MSE: 82.3152 | Val MSE: 85.0120 | σ=0.728 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 19 → 
+
+Train MSE: 58.3596 | Val MSE: 62.3564 | σ=0.724 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 20 → 
+
+Train MSE: 59.6656 | Val MSE: 60.3214 | σ=0.720 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 21 → 
+
+Train MSE: 47.2109 | Val MSE: 50.0209 | σ=0.716 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 50.0209114953455
+
+Epoch 22 → 
+
+Train MSE: 51.7101 | Val MSE: 52.6609 | σ=0.712 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 23 → 
+
+Train MSE: 30.6674 | Val MSE: 34.4201 | σ=0.708 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 34.42013627204342
+
+Epoch 24 → 
+
+Train MSE: 25.2724 | Val MSE: 28.9980 | σ=0.704 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 28.99798157413346
+
+Epoch 25 → 
+
+Train MSE: 43.4059 | Val MSE: 45.4916 | σ=0.700 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 26 → 
+
+Train MSE: 23.2601 | Val MSE: 24.3488 | σ=0.696 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 24.348798233893515
+
+Epoch 27 → 
+
+Train MSE: 26.4977 | Val MSE: 28.3868 | σ=0.692 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 28 → 
+
+Train MSE: 23.5154 | Val MSE: 24.6828 | σ=0.688 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 29 → 
+
+Train MSE: 33.7160 | Val MSE: 35.4477 | σ=0.684 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 30 → 
+
+Train MSE: 31.3532 | Val MSE: 33.8468 | σ=0.680 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 31 → 
+
+Train MSE: 18.7495 | Val MSE: 19.9781 | σ=0.676 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 19.978149764688755
+
+Epoch 32 → 
+
+Train MSE: 27.5962 | Val MSE: 30.6062 | σ=0.672 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 33 → 
+
+Train MSE: 16.7608 | Val MSE: 18.5366 | σ=0.668 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 18.536594104257638
+
+Epoch 34 → 
+
+Train MSE: 21.4130 | Val MSE: 22.8906 | σ=0.664 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 35 → 
+
+Train MSE: 25.4865 | Val MSE: 27.0554 | σ=0.660 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 36 → 
+
+Train MSE: 30.1107 | Val MSE: 32.4077 | σ=0.656 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 37 → 
+
+Train MSE: 22.9679 | Val MSE: 23.5619 | σ=0.652 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 38 → 
+
+Train MSE: 24.0764 | Val MSE: 26.1757 | σ=0.648 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 39 → 
+
+Train MSE: 89.7528 | Val MSE: 91.3858 | σ=0.644 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 40 → 
+
+Train MSE: 26.9476 | Val MSE: 30.0148 | σ=0.640 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 41 → 
+
+Train MSE: 49.8167 | Val MSE: 52.4176 | σ=0.636 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 42 → 
+
+Train MSE: 78.8332 | Val MSE: 81.5572 | σ=0.632 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 43 → 
+
+Train MSE: 22.8974 | Val MSE: 24.8853 | σ=0.628 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 44 → 
+
+Train MSE: 16.8984 | Val MSE: 19.3649 | σ=0.624 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 45 → 
+
+Train MSE: 16.8346 | Val MSE: 19.0016 | σ=0.620 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 46 → 
+
+Train MSE: 14.0629 | Val MSE: 15.3243 | σ=0.616 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 15.324331461064785
+
+Epoch 47 → 
+
+Train MSE: 12.0002 | Val MSE: 12.8935 | σ=0.612 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 12.893496885088725
+
+Epoch 48 → 
+
+Train MSE: 21.8199 | Val MSE: 23.3784 | σ=0.608 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 49 → 
+
+Train MSE: 19.1963 | Val MSE: 21.0499 | σ=0.604 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 50 → 
+
+Train MSE: 10.4474 | Val MSE: 11.4549 | σ=0.600 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 11.454931114394642
+
+Epoch 51 → 
+
+Train MSE: 19.0434 | Val MSE: 21.4344 | σ=0.596 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 52 → 
+
+Train MSE: 12.2952 | Val MSE: 12.5413 | σ=0.592 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 53 → 
+
+Train MSE: 17.7351 | Val MSE: 18.8583 | σ=0.588 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 54 → 
+
+Train MSE: 21.5476 | Val MSE: 23.4430 | σ=0.584 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 55 → 
+
+Train MSE: 25.8819 | Val MSE: 25.2418 | σ=0.580 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 56 → 
+
+Train MSE: 20.3366 | Val MSE: 21.1026 | σ=0.576 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 57 → 
+
+Train MSE: 15.1399 | Val MSE: 16.3524 | σ=0.572 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 58 → 
+
+Train MSE: 28.6650 | Val MSE: 28.2863 | σ=0.568 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 59 → 
+
+Train MSE: 27.1309 | Val MSE: 27.4135 | σ=0.564 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 60 → 
+
+Train MSE: 12.1485 | Val MSE: 13.9424 | σ=0.560 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 61 → 
+
+Train MSE: 14.2124 | Val MSE: 15.4651 | σ=0.556 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 62 → 
+
+Train MSE: 12.7623 | Val MSE: 14.0148 | σ=0.552 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 63 → 
+
+Train MSE: 17.6034 | Val MSE: 18.8385 | σ=0.548 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 64 → 
+
+Train MSE: 46.2220 | Val MSE: 46.4016 | σ=0.544 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 65 → 
+
+Train MSE: 29.7013 | Val MSE: 31.4828 | σ=0.540 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 66 → 
+
+Train MSE: 69.9802 | Val MSE: 71.4271 | σ=0.536 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 67 → 
+
+Train MSE: 132.8720 | Val MSE: 137.5672 | σ=0.532 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 68 → 
+
+Train MSE: 21.7535 | Val MSE: 23.5234 | σ=0.528 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 69 → 
+
+Train MSE: 35.5334 | Val MSE: 38.8932 | σ=0.524 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 70 → 
+
+Train MSE: 23.4540 | Val MSE: 25.0293 | σ=0.520 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 71 → 
+
+Train MSE: 17.0728 | Val MSE: 18.5769 | σ=0.516 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 72 → 
+
+Train MSE: 10.2481 | Val MSE: 10.6100 | σ=0.512 | C=1.000
+Time: 0hrs. 0min. 58sec.
+Model saved with val loss: 10.609965261841984
+
+Epoch 73 → 
+
+Train MSE: 11.1030 | Val MSE: 12.2039 | σ=0.508 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 74 → 
+
+Train MSE: 15.3475 | Val MSE: 16.5445 | σ=0.504 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 75 → 
+
+Train MSE: 19.2633 | Val MSE: 19.2924 | σ=0.500 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 76 → 
+
+Train MSE: 16.0447 | Val MSE: 16.6273 | σ=0.496 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 77 → 
+
+Train MSE: 15.5142 | Val MSE: 17.1905 | σ=0.492 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 78 → 
+
+Train MSE: 10.7169 | Val MSE: 11.7884 | σ=0.488 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 79 → 
+
+Train MSE: 9.8103 | Val MSE: 10.6005 | σ=0.484 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 10.60047415683144
+
+Epoch 80 → 
+
+Train MSE: 16.6732 | Val MSE: 17.5594 | σ=0.480 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 81 → 
+
+Train MSE: 23.7697 | Val MSE: 23.7385 | σ=0.476 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 82 → 
+
+Train MSE: 22.0509 | Val MSE: 23.9798 | σ=0.472 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 83 → 
+
+Train MSE: 20.8586 | Val MSE: 22.9353 | σ=0.468 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 84 → 
+
+Train MSE: 9.5894 | Val MSE: 10.0878 | σ=0.464 | C=1.000
+Time: 0hrs. 0min. 57sec.
+Model saved with val loss: 10.087789011037959
+
+Epoch 85 → 
+
+Train MSE: 21.9507 | Val MSE: 23.9051 | σ=0.460 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 86 → 
+
+Train MSE: 15.7358 | Val MSE: 17.7370 | σ=0.456 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 87 → 
+
+Train MSE: 16.6945 | Val MSE: 17.0646 | σ=0.452 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 88 → 
+
+Train MSE: 30.4902 | Val MSE: 32.8399 | σ=0.448 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 89 → 
+
+Train MSE: 13.8383 | Val MSE: 14.4703 | σ=0.444 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 90 → 
+
+Train MSE: 20.2374 | Val MSE: 21.1856 | σ=0.440 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 91 → 
+
+Train MSE: 13.3619 | Val MSE: 14.0132 | σ=0.436 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 92 → 
+
+Train MSE: 10.9146 | Val MSE: 11.3487 | σ=0.432 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 93 → 
+
+Train MSE: 12.4926 | Val MSE: 12.5176 | σ=0.428 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 94 → 
+
+Train MSE: 14.4134 | Val MSE: 15.1895 | σ=0.424 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 95 → 
+
+Train MSE: 33.2960 | Val MSE: 33.9811 | σ=0.420 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 96 → 
+
+Train MSE: 12.7501 | Val MSE: 13.1045 | σ=0.416 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 97 → 
+
+Train MSE: 32.6138 | Val MSE: 34.0390 | σ=0.412 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 98 → 
+
+Train MSE: 38.2202 | Val MSE: 38.5565 | σ=0.408 | C=1.000
+Time: 0hrs. 0min. 58sec.
+
+Epoch 99 → 
+
+Train MSE: 37.0292 | Val MSE: 39.0622 | σ=0.404 | C=1.000
+Time: 0hrs. 0min. 57sec.
+
+Epoch 100 → 
+
+Train MSE: 12.1963 | Val MSE: 12.6832 | σ=0.400 | C=1.000
+Time: 0hrs. 0min. 57sec.
+/csehome/p23iot002/Shubhro/GUEST/custom_dp.py:280: UserWarning: Optimal order is the smallest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+DP-SGD with
+	sampling rate = 19.5%,
+	noise_multiplier = 0.4,
+	iterated over 600 steps,
+satisfies differential privacy with
+	epsilon = 327,
+	delta = 6.3374685224095e-05.
+The optimal alpha is 1.1.
+The privacy estimate is likely to be improved by expanding the set of alpha orders.
+Final (ε,δ)=(327.25,6.3374685224095e-05), optimal α=1.1
+
+
+
+
+
+
+
+
+
+
+
+
