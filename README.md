@@ -38,6 +38,20 @@ This project was created to explore practical, privacy-preserving RUL forecastin
 
 ---
 
+
+## Key ideas
+- Convert sliding windows of raw sensor time series into compact embeddings using a Transformer encoder (`TimeSeriesEmbedder`).  
+- Combine the time-series embedding (default 128-dim) with ordinal/embedded categorical vehicle specification features (`Spec_0`..`Spec_7`) and pass them into a `TabTransformer` for final regression to predict RUL.  
+- Optionally train with differential privacy using Opacus; sweep `NOISE_M` (noise multiplier) to measure privacy/utility tradeoffs.
+
+---
+
+
+
+
+
+
+
 ## What’s included
 
 * `Preprocess.ipynb` — Full preprocessing pipeline for the Scania dataset (feature engineering, normalization, windowing).
@@ -101,9 +115,11 @@ python test_alpha.py --config configs/scania_dp_example.yaml \
 
 * **Dataset**: Scania RUL dataset (multivariate time series from trucks).
 * Use `Preprocess.ipynb` to:
-
+* `batch_size`, `learning_rate`, `weight_decay`
   * Clean and align sensor channels.
   * Create sliding windows / sequence samples suitable for the TabTransformer model.
+  * Time series input: sliding windows of `context = 70`, `time steps × sensor_features = 105` sensor columns (default).
+  * Components: positional embeddings → Transformer encoder stack → linear projector to `embedding_dim=128`.
   * Split into train / val / test by machine to avoid leakage.
   * Save scalers/encoders for reproducible inference.
 
@@ -131,6 +147,13 @@ Highlights:
 * **Optimizer**: Adam/AdamW.
 * **Scheduler**: cosine or step LR scheduler recommended.
 * **Checkpointing**: save best model by validation RMSE/MAE and checkpoint at intervals.
+* Example hyperparameters:
+    *`context = 70`, `sensor_features = 105`
+    *`embedding_dim = 128`
+    *`batch_size = 128`
+    *`lr = 1e-3`
+    *`epochs = 50` (use early stopping)
+    *`DP: max_grad_norm = 1.0`, `noise_multiplier = <varies>`
 
 Hyperparameters to tune:
 
@@ -147,6 +170,7 @@ Key DP hyperparameters:
 * **Noise multiplier (σ)** — larger σ increases privacy (and utility loss).
 * **Max grad norm (C)** — clipping threshold for per-sample gradients.
 * **Target ε (epsilon)** and **δ (delta)** — the reported privacy budget.
+* **clip_bound** — max per-sample grad norm.
 
 Practical notes:
 
