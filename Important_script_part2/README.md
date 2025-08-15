@@ -18,4 +18,13 @@
 <img width="312" height="37" alt="image" src="https://github.com/user-attachments/assets/f7b1e683-8bfc-4375-bd2b-c506decf6c1b" />
 <img width="282" height="159" alt="image" src="https://github.com/user-attachments/assets/8306efdd-7e06-4bef-9bc5-dfaa635717b3" />
 
-### MIA
+### SVD in Spectral-DP
+
+<img width="261" height="205" alt="image" src="https://github.com/user-attachments/assets/15419292-a910-4f3b-afe3-fa95243ef0b8" />
+<img width="485" height="50" alt="image" src="https://github.com/user-attachments/assets/24d514b2-eb80-4f67-9830-ecd7a194064a" />
+<img width="471" height="231" alt="image" src="https://github.com/user-attachments/assets/1846e37c-6261-4248-b3d4-3e72eb8db061" />
+<img width="411" height="50" alt="image" src="https://github.com/user-attachments/assets/6d3b23a6-50f1-4476-ae0f-13cdde91edb3" />
+<img width="549" height="116" alt="image" src="https://github.com/user-attachments/assets/bb2ba1a8-ac2f-4db4-baff-249c13b5993c" />
+
+<img width="505" height="83" alt="image" src="https://github.com/user-attachments/assets/5368293d-37fc-469c-b55c-903593412272" />
+<img width="422" height="404" alt="image" src="https://github.com/user-attachments/assets/e3e988be-4eb3-4d18-8e9e-e6557f3aa31b" />
