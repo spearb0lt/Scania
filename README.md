@@ -61,9 +61,122 @@ This project was created to explore practical, privacy-preserving RUL forecastin
 ---
 
 ## Repository structure (example)
-
-
-
+```
+.
+├── README.md
+├── FederatedApproach
+│   ├── feddiff_client+spectraldp.py
+│   ├── feddiff_client.py
+│   ├── feddiff_server.py
+│   ├── fedsame_client.py
+│   ├── fedsame_server.py
+│   └── note.md
+├── FInal_script
+│   ├── all_everything2(wrong).py
+│   ├── all_everything_v0(wrong).py
+│   ├── all_everything_v1.py
+│   ├── custom_dp (1).py
+│   ├── custom_dp.py
+│   ├── future_log_generator.py
+│   ├── note.md
+│   ├── spectral_dp+tabtf_v1.py
+│   ├── tabtf+dpsgd(my).py
+│   └── tabtf+dpsgd(sirs).py
+├── Important_script_part1
+│   ├── Basic plottings .ipynb
+│   ├── Data-Preprocessing-Automated.ipynb
+│   ├── Data-Processing-Detailed.ipynb
+│   ├── data_windows.h5
+│   ├── differential_privacy_beta(wrong).ipynb
+│   ├── Inference_on_saved_model.py
+│   ├── initial_models.ipynb
+│   ├── load_saved_model.ipynb
+│   ├── Modelling_part1.ipynb
+│   ├── note.md
+│   ├── running_tf+dp+artifactgenerating(wrong).py
+│   ├── running_tf+dp2.0+artifactgenerating(wrong).py
+│   ├── spec_encoder.joblib
+│   ├── TabTransformer+layervisualization.ipynb
+│   ├── TabTransformer_dyn-hrd-path.ipynb
+│   └── artifacts
+│       ├── CombinedRULModel-DP-20250616_023852
+│       │   ├── checkpoint.pth
+│       │   ├── metadata.json
+│       │   └── train_val_log.txt
+│       └── CombinedRULModel-NDP-20250613_030711
+│           ├── checkpoint.pth
+│           ├── metadata.json
+│           └── train_val_log.txt
+├── Important_script_part2
+│   ├── data_windows.h5
+│   ├── mathematical_logic_for_spectralDP.ipynb
+│   ├── Membership-Inference-Attack(MIA).ipynb
+│   ├── spectral_dp+tabtf_v0.py
+│   ├── spec_encoder.joblib
+│   ├── artifacts
+│   │   .
+│   │   .
+│   │   .
+│   │   ├── CombinedRULModel-DP-20250618_160955
+│   │   │   ├── checkpoint.pth
+│   │   │   ├── metadata.json
+│   │   │   └── train_val_log.txt
+│   │   └── CombinedRULModel-NDP-20250616_163702
+│   │       ├── checkpoint.pth
+│   │       ├── metadata.json
+│   │       └── train_val_log.txt
+│   └── artifacts2
+│       ├── CombinedRULModel-DP-20250704_052418
+│       │   ├── checkpoint.pth
+│       │   ├── metadata.json
+│       │   └── train_val_log.txt
+│       └── CombinedRULModel-NDP-20250707_155658
+│           ├── checkpoint.pth
+│           ├── metadata.json
+│           └── train_val_log.txt
+└── Modular_Approach
+    ├── Version_1(tabtf)
+    │   ├── inference.py
+    │   ├── models.py
+    │   ├── services.py
+    │   ├── trainer.py
+    │   └── utils.py
+    ├── Version_2(tabtf+dp+notes)
+    │   ├── inference.py
+    │   ├── models.py
+    │   ├── services.py
+    │   ├── trainer.py
+    │   ├── utils.py
+    │   └── artifacts
+    │       ├── CombinedRULModel-20250606_032201
+    │       │   ├── checkpoint.pth
+    │       │   ├── metadata.json
+    │       │   └── train_val_log.txt
+    │       .
+    │       .
+    │       .
+    └── Version_3(better notes+functionality)
+        ├── data_windows.h5
+        ├── inference.py
+        ├── loss_plotter.ipynb
+        ├── models.py
+        ├── services.py
+        ├── spec_encoder.joblib
+        ├── trainer.py
+        ├── utils.py
+        └── artifacts
+            ├── CombinedRULModel-20250612_014443-NDP
+            │   ├── checkpoint.pth
+            │   ├── metadata.json
+            │   └── train_val_log.txt
+            ├── CombinedRULModel-20250612_020629-DP
+            │   ├── checkpoint.pth
+            │   ├── metadata.json
+            │   └── train_val_log.txt
+            .
+            .
+            .
+```
 ---
 
 
