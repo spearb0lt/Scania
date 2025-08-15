@@ -1,0 +1,22 @@
+{
+    "model_name": "CombinedRULModel",
+    "num_sensor_features": 105,
+    "context_length": 70,
+    "continuous_dim": 128,
+    "categories": [
+        3,
+        29,
+        21,
+        4,
+        2,
+        5,
+        17,
+        9
+    ],
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "num_epochs": 50,
+    "privacy": "Spectral-DP",
+    "dp_sigma": 0.1,
+    "dp_clip_bound": 1.0
+}
