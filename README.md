@@ -60,7 +60,7 @@ This project was created to explore practical, privacy-preserving RUL forecastin
 
 ---
 
-## Repository structure (example)
+## Repository structure
 ```
 .
 ├── README.md
