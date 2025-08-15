@@ -1,0 +1,21 @@
+{
+    "model_name": "CombinedRULModel",
+    "num_sensor_features": 105,
+    "context_length": 70,
+    "continuous_dim": 128,
+    "categories": [
+        3,
+        29,
+        21,
+        4,
+        2,
+        5,
+        17,
+        9
+    ],
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "num_epochs": 20,
+    "pvt": false,
+    "total_training_time": "00:01:10"
+}

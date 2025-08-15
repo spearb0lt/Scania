@@ -1,0 +1,23 @@
+{
+    "model_name": "CombinedRULModel",
+    "timestamp": "2025-06-06 03:22:01",
+    "num_sensor_features": 105,
+    "context_length": 70,
+    "continuous_dim": 128,
+    "categories": [
+        3,
+        29,
+        21,
+        4,
+        2,
+        5,
+        17,
+        9
+    ],
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "step_size": 5,
+    "gamma": 0.5,
+    "num_epochs": 20,
+    "early_stopping_patience": 3
+}
