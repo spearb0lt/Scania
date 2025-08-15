@@ -62,19 +62,7 @@ This project was created to explore practical, privacy-preserving RUL forecastin
 
 ## Repository structure (example)
 
-```
-├── Preprocess.ipynb
-├── test_alpha.py
-├── MIA.ipynb
-├── configs/
-│   └── scania_dp_example.yaml
-├── notebooks/
-├── models/
-├── results/
-├── data/
-├── requirements.txt
-└── README.md
-```
+
 
 ---
 
