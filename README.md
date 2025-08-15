@@ -13,18 +13,13 @@ This repository implements a TabTransformer-based model for Remaining Useful Lif
 * [Motivation](#motivation)
 * [What’s included](#whats-included)
 * [Repository structure](#repository-structure)
-* [Quickstart](#quickstart)
+
 * [Data & preprocessing](#data--preprocessing)
 * [Model & architecture](#model--architecture)
 * [Training](#training)
 * [Differential privacy (DP) details](#differential-privacy-dp-details)
 * [Evaluation & Membership Inference Attack (MIA)](#evaluation--membership-inference-attack-mia)
 * [Results & tips](#results--tips)
-* [Reproducibility checklist](#reproducibility-checklist)
-* [How to extend](#how-to-extend)
-* [Cite / References](#cite--references)
-* [Contributing](#contributing)
-* [License & Contact](#license--contact)
 
 ---
 
