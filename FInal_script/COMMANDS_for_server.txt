@@ -1,0 +1,21 @@
+COMMANDS
+
+cd /csehome/p23iot002/Shubhro/GUEST
+
+squeue
+sbatch job.sh
+ scancel 5282
+
+
+conda create -p venv python==3.10 -y
+conda activate venv/
+python -m streamlit run app.py
+pip install -r requirements.txt
+
+where python
+C:\Path\To\Python3X\python.exe -m pip list
+C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps\python.exe
+
+
+jobs requirements skills all in RAG
+Vercules news by all
