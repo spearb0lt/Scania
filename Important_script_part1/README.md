@@ -1,6 +1,9 @@
-# Important_script_part1 — Development Phase
+# Important_script_part1 -- Development Phase
 
-This folder documents the iterative development journey from initial data exploration to the first working privacy-preserving TabTransformer model. It contains notebooks for EDA, preprocessing, baseline modelling, and early DP experiments, along with the preprocessed dataset and encoder artifacts.
+This folder documents the iterative development journey from initial data exploration
+to the first working privacy-preserving TabTransformer model. It contains notebooks
+for EDA, preprocessing, baseline modelling, and early DP experiments, along with the
+preprocessed dataset and encoder artifacts.
 
 ---
 
@@ -8,26 +11,26 @@ This folder documents the iterative development journey from initial data explor
 
 | File | Description |
 |---|---|
-| `data_windows.h5` | Preprocessed sliding-window dataset. Schema: `X_windows (N,70,105)`, `y_labels (N,)`, `window_vids (N,)`, `specs_per_window (N,8)` |
-| `spec_encoder.joblib` | Saved `sklearn.OrdinalEncoder` for the 8 categorical specification columns (Spec_0…Spec_7). Category sizes: `(3,29,21,4,2,5,17,9)` |
+| `data_windows.h5` | Preprocessed sliding-window HDF5 dataset. Schema: `X_windows (N,70,105)`, `y_labels (N,)`, `window_vids (N,)`, `specs_per_window (N,8)` |
+| `spec_encoder.joblib` | Saved `sklearn.OrdinalEncoder` for 8 categorical specification columns. Category sizes: `(3,29,21,4,2,5,17,9)` |
 
 ---
 
-## Notebooks & Scripts
+## Notebooks and Scripts
 
 ### Data Processing
 
 | File | Description |
 |---|---|
 | `Data-Processing-Detailed.ipynb` | Step-by-step data cleaning, feature exploration, and EDA. Documents each transformation decision. |
-| `Data-Preprocessing-Automated.ipynb` | Automated end-to-end preprocessing pipeline: load raw CSV → normalize → construct sliding windows → encode specs → save HDF5. |
+| `Data-Preprocessing-Automated.ipynb` | Automated end-to-end pipeline: load raw CSV -> normalize -> construct sliding windows -> encode specs -> save HDF5. |
 | `Basic plottings .ipynb` | EDA visualizations: sensor distributions, RUL label histograms, vehicle lifecycle plots. |
 
 ### Baseline Models
 
 | File | Description |
 |---|---|
-| `initial_models.ipynb` | First exploration of sequence models on the SCANIA-X dataset. Includes LSTM, GRU, VAE, and vanilla Transformer baselines. Also saves `sequence_embeddings.npy` and `sequence_vehicle_ids.npy`. |
+| `initial_models.ipynb` | First sequence-model exploration on SCANIA-X. Includes LSTM, GRU, VAE, and vanilla Transformer baselines. Saves `sequence_embeddings.npy` and `sequence_vehicle_ids.npy`. |
 
 ### TabTransformer Development
 
@@ -41,8 +44,8 @@ This folder documents the iterative development journey from initial data explor
 
 | File | Description |
 |---|---|
-| `differential_privacy_beta(wrong).ipynb` | First DP experiment combining TabTransformer + DP. Marked `(wrong)` — used incorrect per-sample gradient accumulation. |
-| `running_tf+dp+artifactgenerating(wrong).py` | Single-file script combining model + DP + artifact generation. Marked `(wrong)` — had redundant train/val MSE recomputation. |
+| `differential_privacy_beta(wrong).ipynb` | First DP experiment combining TabTransformer + DP. Marked `(wrong)` -- used incorrect per-sample gradient accumulation. |
+| `running_tf+dp+artifactgenerating(wrong).py` | Single-file script combining model + DP + artifact generation. Marked `(wrong)` -- had redundant train/val MSE recomputation after each epoch. |
 | `running_tf+dp2.0+artifactgenerating(wrong).py` | Updated version with early stopping and StepLR, but still contains the redundant MSE computation bug. Superseded by `FInal_script/all_everything_v1.py`. |
 
 ### Inference
@@ -57,12 +60,13 @@ This folder documents the iterative development journey from initial data explor
 ## Artifacts
 
 Training run outputs are saved under `artifacts/`. Each run folder contains:
+
 ```
 artifacts/
-└── CombinedRULModel-{DP|NDP}-{YYYYMMDD_HHMMSS}/
-    ├── checkpoint.pth       ← best model weights
-    ├── metadata.json        ← training config
-    └── train_val_log.txt    ← per-epoch loss log
+`-- CombinedRULModel-{DP|NDP}-{YYYYMMDD_HHMMSS}/
+    |-- checkpoint.pth       <- best model weights
+    |-- metadata.json        <- training config
+    `-- train_val_log.txt    <- per-epoch loss log
 ```
 
 ---

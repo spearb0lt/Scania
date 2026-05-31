@@ -1,6 +1,9 @@
-# Important_script_part2 — Privacy Evaluation Phase
+# Important_script_part2 -- Privacy Evaluation Phase
 
-This folder contains the advanced privacy-preserving training scripts and the complete MIA (Membership Inference Attack) evaluation framework. It builds directly on the model architecture from `Important_script_part1` and implements the final Spectral-DP algorithm alongside the mathematical derivation and empirical privacy validation.
+This folder contains the advanced privacy training scripts and the complete MIA
+(Membership Inference Attack) evaluation framework. It builds directly on the model
+architecture from `Important_script_part1` and implements the final Spectral-DP
+algorithm alongside the full mathematical derivation and empirical privacy validation.
 
 ---
 
@@ -8,18 +11,18 @@ This folder contains the advanced privacy-preserving training scripts and the co
 
 | File | Description |
 |---|---|
-| `data_windows.h5` | Same preprocessed HDF5 dataset as Part 1 (shared format) |
+| `data_windows.h5` | Same preprocessed HDF5 dataset as Part 1 |
 | `spec_encoder.joblib` | Same OrdinalEncoder for 8 categorical spec features |
 
 ---
 
-## Scripts & Notebooks
+## Scripts and Notebooks
 
 ### Training
 
 | File | Description |
 |---|---|
-| `spectral_dp+tabtf_v0.py` | Initial Spectral-DP + TabTransformer script. Predecessor to `FInal_script/spectral_dp+tabtf_v1.py`. Uses `AdamW` + `CosineAnnealingLR`, batch=1024 for server runs. |
+| `spectral_dp+tabtf_v0.py` | Initial Spectral-DP + TabTransformer script. Predecessor to `FInal_script/spectral_dp+tabtf_v1.py`. Uses AdamW + CosineAnnealingLR, batch=1024 for server runs. |
 
 ### Mathematical Derivation
 
@@ -27,39 +30,39 @@ This folder contains the advanced privacy-preserving training scripts and the co
 |---|---|
 | `mathematical_logic_for_spectralDP.ipynb` | Complete mathematical proof for why SVD-domain gradient perturbation satisfies differential privacy. Covers: SVD decomposition, spectral clipping as a sensitivity bound, Gaussian mechanism in the singular value domain, and RDP conversion. |
 
-### Privacy Evaluation (MIA)
+### Privacy Evaluation
 
 | File | Description |
 |---|---|
-| `Membership-Inference-Attack(MIA).ipynb` | Full MIA framework. Combines white-box (activations), gray-box (gradient norms), black-box (loss/confidence), and time-series specific (seasonality, trend) features to attack both DP and NDP models. Achieves **AUC 49.12%, Accuracy 49.59%** against the DP model, confirming near-zero membership leakage. |
+| `Membership-Inference-Attack(MIA).ipynb` | Full MIA framework combining white-box (activations), gray-box (gradient norms), black-box (loss/confidence), and time-series specific (seasonality, trend) features. Achieves **AUC 49.12%, Accuracy 49.59%** against the DP model -- empirically confirming zero membership leakage. |
 
 ---
 
 ## Artifacts
 
-### `artifacts/` — Spectral-DP training runs (server, batch=1024)
+### `artifacts/` -- Spectral-DP training runs (server, batch=1024)
 
 | Run | Privacy | Notes |
 |---|---|---|
 | `CombinedRULModel-NDP-20250616_163702` | None | NDP baseline |
 | `CombinedRULModel-DP-20250616_170035` | Spectral-DP | First server run |
-| `CombinedRULModel-DP-20250617_163951` | Spectral-DP | — |
-| `CombinedRULModel-DP-20250617_164137` | Spectral-DP | — |
-| `CombinedRULModel-DP-20250617_165156` | Spectral-DP | — |
-| `CombinedRULModel-DP-20250618_154623` | Spectral-DP | — |
-| `CombinedRULModel-DP-20250618_160955` | Spectral-DP | — |
+| `CombinedRULModel-DP-20250617_163951` | Spectral-DP | -- |
+| `CombinedRULModel-DP-20250617_164137` | Spectral-DP | -- |
+| `CombinedRULModel-DP-20250617_165156` | Spectral-DP | -- |
+| `CombinedRULModel-DP-20250618_154623` | Spectral-DP | sigma=0.1, clip=1.0 |
+| `CombinedRULModel-DP-20250618_160955` | Spectral-DP | -- |
 
-### `artifacts2/` — Later runs (modular trainer)
+### `artifacts2/` -- Later runs (modular trainer)
 
 | Run | Privacy | Notes |
 |---|---|---|
 | `CombinedRULModel-NDP-20250707_155658` | None | Latest NDP baseline |
-| `CombinedRULModel-DP-20250704_051148` | DP | — |
-| `CombinedRULModel-DP-20250704_051501` | DP | — |
-| `CombinedRULModel-DP-20250704_051637` | DP | — |
-| `CombinedRULModel-DP-20250704_052418` | DP | — |
+| `CombinedRULModel-DP-20250704_051148` | DP | -- |
+| `CombinedRULModel-DP-20250704_051501` | DP | -- |
+| `CombinedRULModel-DP-20250704_051637` | DP | -- |
+| `CombinedRULModel-DP-20250704_052418` | DP | -- |
 
-Each artifact folder contains `checkpoint.pth`, `metadata.json`, and `train_val_log.txt`.
+Each artifact contains `checkpoint.pth`, `metadata.json`, `train_val_log.txt`.
 
 ---
 
@@ -75,7 +78,7 @@ Each artifact folder contains `checkpoint.pth`, `metadata.json`, and `train_val_
 
 ---
 
-## SVD in Spectral-DP — Mathematical Derivation
+## SVD in Spectral-DP -- Mathematical Derivation
 
 <img width="261" height="205" alt="SVD decomposition" src="https://github.com/user-attachments/assets/15419292-a910-4f3b-afe3-fa95243ef0b8" />
 <img width="485" height="50" alt="SVD formula" src="https://github.com/user-attachments/assets/24d514b2-eb80-4f67-9830-ecd7a194064a" />

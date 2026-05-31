@@ -1,6 +1,8 @@
-# Version_2(tabtf+dp+notes) — TabTransformer + DP-SGD + Artifact Logging
+# Version_2(tabtf+dp+notes) -- TabTransformer + DP-SGD + Artifact Logging
 
-Extends Version 1 with DP-SGD support and the artifact logging system. Training runs now save `metadata.json` and `train_val_log.txt` alongside `checkpoint.pth`.
+Extends Version 1 with DP-SGD support and the artifact logging system.
+Training runs now save `metadata.json` and `train_val_log.txt` alongside
+`checkpoint.pth`. Includes detailed inline notes throughout.
 
 ---
 
@@ -9,18 +11,21 @@ Extends Version 1 with DP-SGD support and the artifact logging system. Training 
 | File | Description |
 |---|---|
 | `models.py` | Same `TimeSeriesEmbedder` + `CombinedRULModel` as Version 1 |
-| `trainer.py` | Training loop with `pvt` (DP) flag, `StepLR` + early stopping (`ES_PATIENCE=11`), and full artifact generation. Sets `use_h5=True/False` to load from HDF5 or regenerate from CSV. |
+| `trainer.py` | Training loop with `pvt` (DP flag). `use_h5=True/False` switches between HDF5 loading and CSV regeneration. StepLR + early stopping (ES_PATIENCE=11). Full artifact generation. |
 | `inference.py` | Loads artifact by folder path and runs inference |
-| `services.py` | Loss & optimizer factory |
+| `services.py` | Loss and optimizer factory |
 | `utils.py` | Extended: adds `save_to_h5()`, `load_from_h5()`, `make_artifact_folder()`, `H5_PATH`, `ENCODER_PATH` constants |
 
 ---
 
 ## Key Additions vs Version 1
 
-- **DP-SGD**: `pvt = True` enables per-sample gradient clipping + Gaussian noise. `max_grad_norm=1.0`, `noise_multiplier=1.0`.
-- **Artifact system**: timestamped folder `CombinedRULModel-{DP|NDP}-{timestamp}/` with `checkpoint.pth`, `metadata.json`, `train_val_log.txt`.
-- **H5 caching**: set `use_h5=True` to load pre-built windows from `data_windows.h5` for fast restarts.
+- **DP-SGD**: `pvt = True` enables per-sample gradient clipping + Gaussian noise.
+  `max_grad_norm=1.0`, `noise_multiplier=1.0`.
+- **Artifact system**: timestamped folder `CombinedRULModel-{DP|NDP}-{timestamp}/`
+  with `checkpoint.pth`, `metadata.json`, `train_val_log.txt`.
+- **HDF5 caching**: `use_h5=True` to load pre-built windows from `data_windows.h5`
+  for fast restarts (avoids rebuilding windows from CSV every time).
 - **LR scheduling**: `StepLR` with `LR_PATIENCE=5` and `LR_FACTOR=0.5`.
 - **Early stopping**: halts at `ES_PATIENCE=11` consecutive non-improving epochs.
 
@@ -29,7 +34,7 @@ Extends Version 1 with DP-SGD support and the artifact logging system. Training 
 ## Running
 
 ```bash
-# Set use_h5, pvt, hyperparameters inside trainer.py, then:
+# Set use_h5=True/False and pvt=True/False inside trainer.py, then:
 python trainer.py
 ```
 
