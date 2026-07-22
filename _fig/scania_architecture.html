@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#ffffff;}
+  #wrap{width:1680px;height:1180px;background:#ffffff;}
+  svg{display:block;}
+  text{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#1e1e1e;}
+</style>
+</head>
+<body>
+<div id="wrap">
+<svg width="1680" height="1180" viewBox="0 0 1680 1180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#6f7680"/>
+    </marker>
+    <marker id="arrowsm" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,4 L0,8 z" fill="#9aa0a8"/>
+    </marker>
+    <marker id="arrowdp" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#c98a5b"/>
+    </marker>
+    <style>
+      .lbl{font-size:15px;fill:#20242a;}
+      .lblsm{font-size:12.5px;fill:#3a4048;}
+      .tiny{font-size:11px;fill:#556;}
+      .fn{font-size:19px;font-style:italic;fill:#33235a;}
+      .panel{font-size:27px;font-weight:700;fill:#111;}
+      .sec{font-size:16px;font-weight:600;fill:#2a2f36;}
+      .conn{stroke:#6f7680;stroke-width:1.6;fill:none;}
+      .connsm{stroke:#9aa0a8;stroke-width:1.3;fill:none;}
+      .dp{stroke:#c98a5b;stroke-width:1.6;fill:none;stroke-dasharray:5 4;}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1680" height="1180" fill="#ffffff"/>
+
+  <!-- ===================== PANEL (a) ===================== -->
+  <text x="24" y="58" class="panel">(a)</text>
+
+  <!-- dashed training-region container -->
+  <rect x="392" y="70" width="1258" height="360" rx="14" fill="#fbfbfc" stroke="#d3d7dd" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="410" y="94" class="sec">Centralized privacy-preserving training  ·  Hybrid TabTransformer</text>
+
+  <!-- input header -->
+  <text x="52" y="94" class="sec">SCANIA-X fleet</text>
+
+  <!-- sensor telemetry input -->
+  <rect x="46" y="108" width="196" height="86" rx="10" fill="#dcecf6" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="144" y="132" text-anchor="middle" class="lbl" font-weight="600">Raw sensor telemetry</text>
+  <text x="144" y="151" text-anchor="middle" class="lblsm">105 signals × 70 time steps</text>
+  <!-- little waveforms -->
+  <polyline points="64,178 82,166 100,182 118,164 136,180 154,168 172,182 190,166 208,180 224,170" fill="none" stroke="#4f7fa6" stroke-width="1.6"/>
+  <polyline points="64,186 82,180 100,188 118,178 136,187 154,179 172,188 190,180 208,187 224,181" fill="none" stroke="#8fb4d2" stroke-width="1.4"/>
+
+  <!-- vehicle specs input -->
+  <rect x="46" y="206" width="196" height="72" rx="10" fill="#e9e6f2" stroke="#a98fc9" stroke-width="1.4"/>
+  <text x="144" y="230" text-anchor="middle" class="lbl" font-weight="600">Vehicle specifications</text>
+  <text x="144" y="250" text-anchor="middle" class="lblsm">8 categorical: Spec&#8320;&#8211;Spec&#8327;</text>
+  <text x="144" y="269" text-anchor="middle" class="tiny">cardinalities 3,29,21,4,2,5,17,9</text>
+
+  <!-- mapping phi -->
+  <line x1="242" y1="151" x2="286" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <rect x="288" y="128" width="96" height="128" rx="10" fill="#f0f1f3" stroke="#bcc2c9" stroke-width="1.4"/>
+  <text x="336" y="176" text-anchor="middle" class="fn">&#966;</text>
+  <text x="336" y="200" text-anchor="middle" class="lblsm">sliding-</text>
+  <text x="336" y="217" text-anchor="middle" class="lblsm">window</text>
+  <text x="336" y="234" text-anchor="middle" class="tiny">stride 1</text>
+  <line x1="242" y1="240" x2="286" y2="215" class="conn" marker-end="url(#arrow)"/>
+
+  <!-- TimeSeriesEmbedder f_theta^ts -->
+  <line x1="384" y1="176" x2="424" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <rect x="426" y="128" width="150" height="96" rx="10" fill="#ddcdec" stroke="#a98fc9" stroke-width="1.5"/>
+  <text x="501" y="162" text-anchor="middle" class="fn">f<tspan font-size="12" baseline-shift="sub" font-style="normal">&#952;</tspan><tspan font-size="12" baseline-shift="super" font-style="normal">ts</tspan></text>
+  <text x="501" y="185" text-anchor="middle" class="lblsm" font-weight="600">TimeSeriesEmbedder</text>
+  <text x="501" y="203" text-anchor="middle" class="tiny">2-layer Transformer · 8 heads</text>
+  <text x="501" y="218" text-anchor="middle" class="tiny">last-step pooling</text>
+
+  <!-- z_ts embedding -->
+  <line x1="576" y1="176" x2="616" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <rect x="618" y="140" width="128" height="74" rx="10" fill="#dcecf6" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="682" y="172" text-anchor="middle" class="lbl" font-weight="600">Time-series</text>
+  <text x="682" y="190" text-anchor="middle" class="lbl" font-weight="600">embedding z<tspan font-size="11" baseline-shift="sub" font-weight="400">ts</tspan></text>
+  <text x="682" y="207" text-anchor="middle" class="tiny">d = 128</text>
+
+  <!-- x_cat feed (from specs, routed under) -->
+  <path d="M144,278 L144,330 L760,330 L760,262" class="connsm" marker-end="url(#arrowsm)"/>
+  <text x="430" y="346" text-anchor="middle" class="tiny">ordinal-encoded categorical  x<tspan font-size="9" baseline-shift="sub">cat</tspan>  (batch × 8)</text>
+
+  <!-- stacked embeddings -->
+  <line x1="746" y1="176" x2="782" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="796" y="150" width="86" height="66" rx="7" fill="#f6d7e2" stroke="#d99cb0" stroke-width="1.3"/>
+    <rect x="789" y="143" width="86" height="66" rx="7" fill="#f8dfe8" stroke="#d99cb0" stroke-width="1.3"/>
+    <rect x="782" y="136" width="86" height="66" rx="7" fill="#fbe8ef" stroke="#d99cb0" stroke-width="1.3"/>
+  </g>
+  <text x="825" y="168" text-anchor="middle" class="lblsm" font-weight="600">Stacked</text>
+  <text x="825" y="185" text-anchor="middle" class="lblsm" font-weight="600">embeddings</text>
+
+  <!-- TabTransformer fusion -->
+  <line x1="868" y1="176" x2="906" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <rect x="908" y="126" width="172" height="100" rx="10" fill="#d3c3ea" stroke="#9d80c6" stroke-width="1.6"/>
+  <text x="994" y="160" text-anchor="middle" class="fn">f<tspan font-size="12" baseline-shift="sub" font-style="normal">&#952;</tspan><tspan font-size="12" baseline-shift="super" font-style="normal">fusion</tspan></text>
+  <text x="994" y="184" text-anchor="middle" class="lblsm" font-weight="600">TabTransformer</text>
+  <text x="994" y="202" text-anchor="middle" class="tiny">depth 6 · heads 8</text>
+  <text x="994" y="217" text-anchor="middle" class="tiny">cross-attention fusion</text>
+
+  <!-- RUL output -->
+  <line x1="1080" y1="176" x2="1118" y2="176" class="conn" marker-end="url(#arrow)"/>
+  <rect x="1120" y="140" width="156" height="74" rx="10" fill="#cfe6c2" stroke="#7cb35f" stroke-width="1.6"/>
+  <text x="1198" y="170" text-anchor="middle" class="lbl" font-weight="700" fill="#2f5d1f">RUL prediction</text>
+  <text x="1198" y="192" text-anchor="middle" class="lblsm" fill="#3a5f2c">scalar · MSE 2725</text>
+
+  <!-- MIA evaluation -->
+  <line x1="1198" y1="214" x2="1198" y2="256" class="conn" marker-end="url(#arrow)"/>
+  <rect x="1104" y="258" width="190" height="82" rx="10" fill="#eef6e9" stroke="#7cb35f" stroke-width="1.5"/>
+  <text x="1199" y="284" text-anchor="middle" class="lbl" font-weight="600" fill="#2f5d1f">MIA evaluation</text>
+  <text x="1199" y="305" text-anchor="middle" class="lblsm">white/gray/black-box +</text>
+  <text x="1199" y="322" text-anchor="middle" class="lblsm">TS features · AUC 49.12%</text>
+
+  <!-- DP band -->
+  <rect x="426" y="366" width="654" height="52" rx="10" fill="#f7e3d4" stroke="#c98a5b" stroke-width="1.5"/>
+  <text x="753" y="389" text-anchor="middle" class="lbl" font-weight="700" fill="#8a4f22">Spectral-DP  /  DP-SGD  gradient perturbation</text>
+  <text x="753" y="408" text-anchor="middle" class="lblsm" fill="#8a4f22">SVD singular-value clipping + Gaussian noise · per-sample clipping · custom RDP (&#949;,&#948;) accountant</text>
+  <!-- gradient arrows from fusion & embedder down into DP and back -->
+  <path d="M470,224 L470,364" class="dp" marker-end="url(#arrowdp)"/>
+  <path d="M1000,226 L1000,364" class="dp" marker-end="url(#arrowdp)"/>
+  <text x="1096" y="396" class="tiny" fill="#8a4f22">applied to
+  gradients</text>
+
+  <!-- ===================== divider ===================== -->
+  <line x1="24" y1="470" x2="1650" y2="470" stroke="#e2e5e9" stroke-width="1.4"/>
+
+  <!-- ===================== PANEL (b) ===================== -->
+  <text x="24" y="520" class="panel">(b)</text>
+
+  <text x="92" y="520" class="sec">Federated training  ·  heterogeneous clients, no raw data shared</text>
+
+  <!-- dashed region -->
+  <rect x="46" y="540" width="1604" height="600" rx="14" fill="#fbfbfc" stroke="#d3d7dd" stroke-width="1.4" stroke-dasharray="6 5"/>
+
+  <!-- clients -->
+  <!-- client 0 -->
+  <text x="86" y="586" class="sec" font-size="15">Disjoint vehicle fleets (partitioned by vehicle ID)</text>
+
+  <g>
+    <rect x="80" y="600" width="300" height="104" rx="11" fill="#dcecf6" stroke="#7fa8c9" stroke-width="1.5"/>
+    <text x="100" y="628" class="lbl" font-weight="700">Client 0</text>
+    <text x="100" y="650" class="lblsm">Local CombinedRULModel</text>
+    <text x="100" y="670" class="tiny">Spectral-DP  σ=0.1 · C=1.0 · k=2</text>
+    <text x="100" y="688" class="tiny">5 local epochs · batch 256 · lr 1e-3</text>
+    <rect x="300" y="616" width="66" height="46" rx="6" fill="#eef2f6" stroke="#9db4c8" stroke-width="1.1"/>
+    <text x="333" y="636" text-anchor="middle" class="tiny">fleet</text>
+    <text x="333" y="651" text-anchor="middle" class="tiny">A</text>
+  </g>
+
+  <g>
+    <rect x="80" y="726" width="300" height="104" rx="11" fill="#e9e6f2" stroke="#a98fc9" stroke-width="1.5"/>
+    <text x="100" y="754" class="lbl" font-weight="700">Client 1</text>
+    <text x="100" y="776" class="lblsm">Local CombinedRULModel</text>
+    <text x="100" y="796" class="tiny">use_dp = False (baseline)</text>
+    <text x="100" y="814" class="tiny">1 local epoch · batch 64 · lr 5e-4</text>
+    <rect x="300" y="742" width="66" height="46" rx="6" fill="#f0edf6" stroke="#b49ccf" stroke-width="1.1"/>
+    <text x="333" y="762" text-anchor="middle" class="tiny">fleet</text>
+    <text x="333" y="777" text-anchor="middle" class="tiny">B</text>
+  </g>
+
+  <g>
+    <rect x="80" y="852" width="300" height="104" rx="11" fill="#f6ece2" stroke="#c9a37b" stroke-width="1.5"/>
+    <text x="100" y="880" class="lbl" font-weight="700">Client N</text>
+    <text x="100" y="902" class="lblsm">Local CombinedRULModel</text>
+    <text x="100" y="922" class="tiny">custom per-client DP + optimizer</text>
+    <text x="100" y="940" class="tiny">freeze_backbone · variable depth</text>
+    <rect x="300" y="868" width="66" height="46" rx="6" fill="#f7efe6" stroke="#cdae8c" stroke-width="1.1"/>
+    <text x="333" y="888" text-anchor="middle" class="tiny">fleet</text>
+    <text x="333" y="903" text-anchor="middle" class="tiny">N</text>
+  </g>
+
+  <!-- upload weights arrows to server -->
+  <path d="M380,652 C520,652 560,720 636,740" class="conn" marker-end="url(#arrow)"/>
+  <path d="M380,778 L636,778" class="conn" marker-end="url(#arrow)"/>
+  <path d="M380,904 C520,904 560,836 636,816" class="conn" marker-end="url(#arrow)"/>
+  <text x="470" y="726" class="tiny" fill="#4a6a86">local weights + n</text>
+
+  <!-- Server -->
+  <rect x="640" y="700" width="320" height="156" rx="12" fill="#d3c3ea" stroke="#9d80c6" stroke-width="1.7"/>
+  <text x="800" y="734" text-anchor="middle" class="fn">f<tspan font-size="12" baseline-shift="sub" font-style="normal">&#952;</tspan><tspan font-size="12" baseline-shift="super" font-style="normal">global</tspan></text>
+  <text x="800" y="762" text-anchor="middle" class="lbl" font-weight="700">Server</text>
+  <text x="800" y="784" text-anchor="middle" class="lblsm">HeterogeneousStrategy (FedAvg)</text>
+  <text x="800" y="806" text-anchor="middle" class="tiny">configure_fit → per-client config dispatch</text>
+  <text x="800" y="824" text-anchor="middle" class="tiny">aggregate_fit → weighted by n_samples</text>
+  <text x="800" y="844" text-anchor="middle" class="tiny">privacy preserved end-to-end</text>
+
+  <!-- config dispatch arrows back down (dashed) -->
+  <path d="M636,730 C540,700 470,660 380,636" class="dp" marker-end="url(#arrowdp)"/>
+  <path d="M636,830 C540,880 470,920 380,940" class="dp" marker-end="url(#arrowdp)"/>
+  <text x="452" y="642" class="tiny" fill="#8a4f22">per-round config</text>
+
+  <!-- Global model output -->
+  <line x1="960" y1="778" x2="1002" y2="778" class="conn" marker-end="url(#arrow)"/>
+  <rect x="1004" y="722" width="220" height="112" rx="12" fill="#cfe6c2" stroke="#7cb35f" stroke-width="1.7"/>
+  <text x="1114" y="760" text-anchor="middle" class="lbl" font-weight="700" fill="#2f5d1f">Aggregated global</text>
+  <text x="1114" y="782" text-anchor="middle" class="lbl" font-weight="700" fill="#2f5d1f">RUL model</text>
+  <text x="1114" y="804" text-anchor="middle" class="lblsm" fill="#3a5f2c">global_model_round_R.pt</text>
+  <text x="1114" y="823" text-anchor="middle" class="tiny">cross-industry deployable</text>
+
+  <!-- cross-industry note -->
+  <rect x="1256" y="700" width="356" height="156" rx="12" fill="#eef6e9" stroke="#7cb35f" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="1434" y="730" text-anchor="middle" class="sec" font-size="15" fill="#2f5d1f">Cross-industry generalization</text>
+  <text x="1276" y="758" class="lblsm">Change only:</text>
+  <text x="1276" y="780" class="tiny">• num_sensor_features   • context_length</text>
+  <text x="1276" y="800" class="tiny">• categorical cardinalities</text>
+  <text x="1276" y="826" class="lblsm">Unchanged: model · DP · RDP · FL · MIA</text>
+  <text x="1276" y="846" class="tiny">Automotive · Aerospace · Wind · Rail · HVAC</text>
+
+  <!-- footer caption -->
+  <text x="52" y="1010" class="lblsm" font-weight="600">Cross-Industry Privacy-Preserving Framework for Predictive Maintenance — IDA 2024 Industrial Challenge (SCANIA-X)</text>
+  <text x="52" y="1032" class="tiny">(a) Centralized pipeline: sliding-window telemetry + categorical specs → TimeSeriesEmbedder → TabTransformer fusion → RUL, trained under Spectral-DP / DP-SGD and validated by a membership-inference attack (AUC ≈ 49%, near-random).</text>
+  <text x="52" y="1052" class="tiny">(b) Federated extension: disjoint vehicle fleets train locally with per-client differential privacy; a heterogeneous FedAvg server aggregates weights into a privacy-preserving global model — no raw telemetry ever leaves a client.</text>
+
+</svg>
+</div>
+</body>
+</html>

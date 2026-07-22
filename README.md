@@ -4,6 +4,12 @@
 > **Currently the best RUL prediction model on the SCANIA-X dataset -- MSE 2725
 > with full differential privacy, MIA AUC 49.12% (near-random), MIA Accuracy 49.59%.**
 
+<p align="center">
+  <img src="scania_architecture.png" alt="Framework architecture: (a) centralized privacy-preserving Hybrid TabTransformer pipeline with Spectral-DP/DP-SGD and MIA evaluation; (b) federated heterogeneous training with per-client differential privacy" width="100%">
+</p>
+
+<p align="center"><sub><b>(a)</b> Centralized pipeline: sliding-window telemetry + categorical specs &rarr; TimeSeriesEmbedder &rarr; TabTransformer fusion &rarr; RUL, trained under Spectral-DP / DP-SGD and validated by a membership-inference attack (AUC &asymp; 49%, near-random). &nbsp;<b>(b)</b> Federated extension: disjoint vehicle fleets train locally with per-client differential privacy; a heterogeneous FedAvg server aggregates weights into a privacy-preserving global model -- no raw telemetry ever leaves a client.</sub></p>
+
 ---
 
 ## Table of Contents
